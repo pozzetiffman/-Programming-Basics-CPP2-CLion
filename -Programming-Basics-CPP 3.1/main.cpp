@@ -5,88 +5,64 @@
 using namespace std;
 
 class Calculator {
-    public:
-    // Переменные для хранения двух чисел
+private:
     double num1;
     double num2;
-
-    // Метод для ввода двух чисел
-    void input() {
-        cout << "Enter one number: ";
-        cin >> num1; // Ввод первого числа
-        cout << "Enter two numbers: ";
-        cin >> num2; // Ввод второго числа
+public: // конструктор
+    Calculator(double num1, double num2) {
+        this->num1 = num1;
+        this->num2 = num2;
     }
+    Calculator() : num1(1), num2(1) { }
 
-    // Метод для сложения двух чисел
-    double add() {
-        return num1 + num2; // Возвращает сумму двух чисел
-    }
-
-    // Метод для умножения двух чисел
-    double multiply() {
-        return num1 * num2; // Возвращает произведение двух чисел
-    }
-
-    // Метод для вычитания второго числа из первого
-    double subtract_1_2() {
-        return num1 - num2; // Возвращает результат вычитания второго числа из первого
-    }
-
-    // Метод для вычитания первого числа из второго
-    double subtract_2_1() {
-        return num2 - num1; // Возвращает результат вычитания первого числа из второго
-    }
-
-    // Метод для деления первого числа на второе
-    double divide_1_2() {
-        return num1 / num2; // Возвращает результат деления первого числа на второе
-    }
-
-    // Метод для деления второго числа на первое
-    double divide_2_1() {
-        return num2 / num1; // Возвращает результат деления второго числа на первое
-    }
+    // Метод для вычисления
+    double add()          {return num1 + num2; } // Возвращает сумму двух чисел
+    double multiply()     {return num1 * num2; } // Возвращает произведение двух чисел
+    double subtract_1_2() {return num1 - num2; } // Возвращает результат вычитания второго числа из первого
+    double subtract_2_1() {return num2 - num1; } // Возвращает результат вычитания первого числа из второго
+    double divide_1_2()   {return num1 / num2; } // Возвращает результат деления первого числа на второе
+    double divide_2_1()   {return num2 / num1; } // Возвращает результат деления второго числа на первое
 
     // Метод для установки значения первого числа
     bool set_num1(double num1) {
-        if (num1 != 0) { // Проверяем, что переданное число не равно нулю
-            this->num1 = num1; // Устанавливаем значение переменной num1
-            return true; // Возвращаем true, если установка прошла успешно
+        if (cin.fail()) { // Проверяем, что введено корректное число
+            cin.clear(); // Сбрасываем флаг ошибки
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Очищаем буфер
+            cout << "Error: Please enter a valid number." << endl;
+            return false;
+        }// если число = 0 ошибка
+        if (num1 == 0) {
+            cout << "Error: num1 cannot be zero." << endl;
+            return false;
         }
-        else {
-            return false; // Возвращаем false, если число равно нулю
-        }
+        this->num1 = num1; // присвоение
+        return true;
     }
-
     // Метод для установки значения второго числа
     bool set_num2(double num2){
-        if (num2 != 0) { // Проверяем, что переданное число не равно нулю
-            this->num2 = num2; // Устанавливаем значение переменной num2
-            return true; // Возвращаем true, если установка прошла успешно
+        if (cin.fail()) { // Проверяем, что введено корректное число
+            cin.clear(); // Сбрасываем флаг ошибки
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Очищаем буфер
+            cout << "Error: Please enter a valid number." << endl;
+            return false;
+        } // если число = 0 ошибка
+        if (num2 == 0) {cout << "Error: num2 cannot be zero." << endl;
+            return false;
         }
-        else {
-            return false; // Возвращаем false, если число равно нулю
-        }
+        this->num2 = num2; // присвоение
+        return true;
     }
 };
-
 int main() {
+    double num1, num2;
     Calculator calculator; // Создаем объект калькулятора
+
     while (true) { // Бесконечный цикл
-        calculator.input(); // Вводим два числа
+        cout << "Enter the first number: "; cin >> num1;
+        if (!calculator.set_num1(num1)) {continue;}
 
-        // Проверяем, что первое число не равно нулю
-        if (!calculator.set_num1(calculator.num1)) {
-            cout << "Error enter one numbers: ";
-            cin >> calculator.num1; // Если первое число равно нулю, просим ввести его заново
-        }
-
-        // Проверяем, что второе число не равно нулю
-        if (!calculator.set_num2(calculator.num2)) {
-            cout << "Error enter two numbers: ";
-            cin >> calculator.num2; // Если второе число равно нулю, просим ввести его заново
-        }
+        cout << "Enter the second number: "; cin >> num2;
+        if (!calculator.set_num2(num2)) {continue;}
 
         // Выполняем и выводим результаты операций
         cout << "add = " << calculator.add() << endl; // Сложение
@@ -96,5 +72,5 @@ int main() {
         cout << "divide 1_2 = " << calculator.divide_1_2() << endl; // Деление первого числа на второе
         cout << "divide 2_1 = " << calculator.divide_2_1() << endl; // Деление второго числа на первое
     }
-    return 0; // Завершение программы
+    return 0;
 }
