@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "_Programming_Basics_CPP_7_2",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "_Programming_Basics_CPP_7_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-_Programming_Basics_CPP_7_2-Debug-2958609d5d7ddc404508.json",
+					"name" : "_Programming_Basics_CPP_7_2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/admin/Desktop/CLion/-Programming-Basics-CPP CLion/-Programming-Basics-CPP 7.2/cmake-build-debug",
+		"source" : "/Users/admin/Desktop/CLion/-Programming-Basics-CPP CLion/-Programming-Basics-CPP 7.2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
