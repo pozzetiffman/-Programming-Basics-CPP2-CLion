@@ -1,0 +1,7 @@
+# ninja log v6
+2	517	1738243100451924587	CMakeFiles/leave_lib.dir/lib/leave_lib.cpp.o	5139ef5659b2f59b
+3	520	1738243100452250625	CMakeFiles/_Programming_Basics_CPP_11_2.dir/main.cpp.o	6c8cea6614c3b6a2
+557	590	1738243101006453276	_Programming_Basics_CPP_11_2	125e9084dc6493a
+1	561	1738239770293499642	CMakeFiles/_Programming_Basics_CPP_11_2.dir/lib/leave_lib.cpp.o	105ca1a7f60bf143
+3	59	1738243160286803630	build.ninja	d136d8cc27670bf2
+518	557	1738243100966906547	libleave_lib.dylib	ea9a35b79e5a772d

@@ -1,0 +1,9 @@
+# ninja log v6
+499	520	1738236271228830073	libgreeting_library.a	d713c2ff3a7a2405
+2	411	1738236460129721210	CMakeFiles/greeting_library.dir/lib/greeting_library.cpp.o	cbb3b5a252bbc61c
+494	528	1738223599324486224	_Programming_Basics_CPP_10_1	b4e9622bb2748efc
+441	472	1738236460568466987	_Programming_Basics_CPP_11_1	3649031c50328217
+3	492	1738236445171204037	CMakeFiles/_Programming_Basics_CPP_11_1.dir/main.cpp.o	7ecceb4208079b1f
+411	441	1738236460538257448	libgreeting_library.dylib	d1ebba0e90e702cc
+3	434	1738234941662224653	CMakeFiles/_Programming_Basics_CPP_11_1.dir/lib/greeting_library.cpp.o	1767f046c11b5131
+1	43	1738237557107945010	build.ninja	a8ee9afa04c98004

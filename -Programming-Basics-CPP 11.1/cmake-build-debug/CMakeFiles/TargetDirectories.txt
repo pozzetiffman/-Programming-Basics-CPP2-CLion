@@ -1,0 +1,4 @@
+/Users/admin/Desktop/CLion/-Programming-Basics-CPP CLion/-Programming-Basics-CPP 11.1/cmake-build-debug/CMakeFiles/greeting_library.dir
+/Users/admin/Desktop/CLion/-Programming-Basics-CPP CLion/-Programming-Basics-CPP 11.1/cmake-build-debug/CMakeFiles/_Programming_Basics_CPP_11_1.dir
+/Users/admin/Desktop/CLion/-Programming-Basics-CPP CLion/-Programming-Basics-CPP 11.1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/admin/Desktop/CLion/-Programming-Basics-CPP CLion/-Programming-Basics-CPP 11.1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

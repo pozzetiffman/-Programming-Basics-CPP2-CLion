@@ -16,4 +16,5 @@ public:
     void print_info() const override;
 };
 
+
 #endif //TRIANGLE_H

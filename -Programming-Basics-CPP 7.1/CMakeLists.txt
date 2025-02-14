@@ -3,4 +3,5 @@ project(_Programming_Basics_CPP_7_1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(_Programming_Basics_CPP_7_1 main.cpp)
+add_executable(_Programming_Basics_CPP_7_1 main.cpp
+        main.cpp)

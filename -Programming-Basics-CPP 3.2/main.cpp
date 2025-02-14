@@ -56,4 +56,4 @@ int main() {
     // удоляем память
     delete CS;
     return 0;
-}ы
+}

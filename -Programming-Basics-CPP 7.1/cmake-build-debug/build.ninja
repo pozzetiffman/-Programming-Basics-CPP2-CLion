@@ -51,7 +51,7 @@ build cmake_object_order_depends_target__Programming_Basics_CPP_7_1: phony || .
 
 build CMakeFiles/_Programming_Basics_CPP_7_1.dir/main.cpp.o: CXX_COMPILER___Programming_Basics_CPP_7_1_unscanned_Debug /Users/admin/Desktop/CLion/-Programming-Basics-CPP$ CLion/-Programming-Basics-CPP$ 7.1/main.cpp || cmake_object_order_depends_target__Programming_Basics_CPP_7_1
   DEP_FILE = CMakeFiles/_Programming_Basics_CPP_7_1.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/_Programming_Basics_CPP_7_1.dir
   OBJECT_FILE_DIR = CMakeFiles/_Programming_Basics_CPP_7_1.dir
   TARGET_COMPILE_PDB = CMakeFiles/_Programming_Basics_CPP_7_1.dir/
@@ -66,7 +66,7 @@ build CMakeFiles/_Programming_Basics_CPP_7_1.dir/main.cpp.o: CXX_COMPILER___Prog
 # Link the executable _Programming_Basics_CPP_7_1
 
 build _Programming_Basics_CPP_7_1: CXX_EXECUTABLE_LINKER___Programming_Basics_CPP_7_1_Debug CMakeFiles/_Programming_Basics_CPP_7_1.dir/main.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/_Programming_Basics_CPP_7_1.dir
   POST_BUILD = :
   PRE_LINK = :

@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "_Programming_Basics_CPP_11_1",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "_Programming_Basics_CPP_11_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-_Programming_Basics_CPP_11_1-Debug-40b9d77b1adda8c38b6f.json",
+					"name" : "_Programming_Basics_CPP_11_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "greeting_library::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-greeting_library-Debug-57fda5328f06550c6503.json",
+					"name" : "greeting_library",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/admin/Desktop/CLion/-Programming-Basics-CPP CLion/-Programming-Basics-CPP 11.1/cmake-build-debug",
+		"source" : "/Users/admin/Desktop/CLion/-Programming-Basics-CPP CLion/-Programming-Basics-CPP 11.1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

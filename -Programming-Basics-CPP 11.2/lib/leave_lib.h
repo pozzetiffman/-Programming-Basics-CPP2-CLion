@@ -4,12 +4,21 @@
 
 #ifndef LEAVE_LIB_H
 #define LEAVE_LIB_H
+#include <string>
 
 
+class Leaver {
+    protected:
+    std::string leave;
 
-class leave_lib {
+    public:
+    explicit Leaver(std::string leave);
 
+    std::string get_Leave();
+
+    void print_info();
 };
+
 
 
 

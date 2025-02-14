@@ -12,11 +12,14 @@
 #include "Figure/Rhomb/Rhomb.h"
 
 
+
 int main() {
 
    Figure* figure[] = {
       new The_quadrilateral(10,20,30,40,50,60,70,80),
       new Triangle {10, 20, 30, 50, 60, 70},
+
+
 
       new A_right_angled_riangle {10, 20, 30, 50, 60, 90},
       new Isosceles_triangle {10, 20, 10, 50, 60, 50},
@@ -29,11 +32,15 @@ int main() {
 
    };
 
+
    for (int i = 0; i < sizeof(figure) / sizeof(figure[0]); i++) {
       figure[i]->print_info();
    }
 
-   delete *figure;
+   for (int i = 0; i < sizeof(figure) / sizeof(figure[0]); i++) {
+      delete figure[i];
+   }
+
 
 
 }
